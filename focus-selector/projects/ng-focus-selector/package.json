@@ -1,0 +1,29 @@
+{
+  "name": "ng-focus-selector",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkchaitanya/ng-focus-selector.git"
+  },
+  "keywords": [
+    "angular",
+    "focus",
+    "candy",
+    "qwerty",
+    "tv apps",
+    "stb"
+  ],
+  "author": "wkchaitanya <wkchaitanya@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wkchaitanya/ng-focus-selector/issues"
+  },
+  "homepage": "https://github.com/wkchaitanya/ng-focus-selector#readme",
+  "peerDependencies": {
+    "@angular/common": "^10.1.6",
+    "@angular/core": "^10.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

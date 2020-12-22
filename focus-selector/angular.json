@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ng-focus-selector": {
+      "projectType": "library",
+      "root": "projects/ng-focus-selector",
+      "sourceRoot": "projects/ng-focus-selector/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ng-focus-selector/tsconfig.lib.json",
+            "project": "projects/ng-focus-selector/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-focus-selector/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-focus-selector/src/test.ts",
+            "tsConfig": "projects/ng-focus-selector/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-focus-selector/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-focus-selector/tsconfig.lib.json",
+              "projects/ng-focus-selector/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": "1b8e0019-174b-4d29-986a-9be44768dbb6"
+  },
+  "defaultProject": "ng-focus-selector"
+}
